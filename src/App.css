@@ -1,0 +1,181 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  min-width: 500px;
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.subscribe-box {
+  background-color: white; 
+  border-radius: 50px;
+  padding: 50px;
+  width: 70%; 
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-box .icon {
+  font-size: 50px;
+}
+
+.subscribe-box h2 {
+  margin: 20px 0;
+  font-size: 24px;
+  color: black;
+}
+
+.subscribe-box input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: none; 
+  border-bottom: 2px solid #696b6a; 
+  background-color: transparent;
+  color: black; 
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+
+
+.subscribe-box button {
+  padding: 12px 25px; 
+  width: auto;
+  background-color: #e6fc15;
+  color: black;
+  font-weight: bold; 
+  border: none;
+  border-radius: 50px; 
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+
+.subscribe-box button:hover {
+  background-color: #afc20a; 
+}
+
+
+
+
+.success-message {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 70%; 
+  max-width: 800px;
+}
+
+.success-message h2 {
+  font-size: 24px;
+  color: #28a745;
+}
+
+.success-message p {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+footer small {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f4f7fa;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+
+.success-message .icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+
+.success-message .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+
+.success-message .message {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+
+.success-message .sub-message {
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .subscribe-box,
+  .success-message
+    {
+      width: 100%;
+    }
+
+}
